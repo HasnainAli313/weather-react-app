@@ -1,0 +1,76 @@
+#btn {
+  background-color: rgb(94, 189, 227);
+}
+#btn:hover {
+  background-color: rgb(77, 168, 203);
+}
+body {
+  background-image: url("/src/assets/HD.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.heading{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.heading:hover{
+    transform: scale(1.01);
+    transition: all 1s ease-in-out;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-top: 20px;
+}
+
+input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 2px;
+}
+.sub_btn {
+  padding: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  font-size: 16px;
+  font-size: bold;
+}
+.box {
+  border: 1px solid #ccc;
+  background-color: #a7c7e7;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+.error {
+  color: red;
+}
+.details {
+    color: black;
+  font-size: bold;
+  box-shadow: 2px 2px 2px white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 100px;
+    justify-content: flex-start;
+  }
+  body {
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+}
